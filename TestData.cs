@@ -19,6 +19,9 @@ namespace Grammophone.DataAccess.Tests.Domain
 		/// <summary>Track name.</summary>
 		public const string TrackName = "Opening Assertion";
 
+		/// <summary>Track duration in seconds.</summary>
+		public const int TrackDurationSeconds = 245;
+
 		/// <summary>Album release date.</summary>
 		public static readonly DateTime AlbumReleaseDate = new DateTime(2024, 1, 1);
 	}

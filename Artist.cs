@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 namespace Grammophone.DataAccess.Tests.Domain
 {
@@ -8,12 +9,12 @@ namespace Grammophone.DataAccess.Tests.Domain
 	public class Artist
 	{
 		/// <summary>The primary key.</summary>
-		public int ID { get; set; }
+		public virtual int ID { get; set; }
 
 		/// <summary>The artist name.</summary>
-		public string Name { get; set; }
+		public virtual string Name { get; set; }
 
 		/// <summary>The artist albums.</summary>
-		public virtual ICollection<Album> Albums { get; set; } = new HashSet<Album>();
+		public virtual ICollection<Album> Albums { get; set; } = new ObservableCollection<Album>();
 	}
 }

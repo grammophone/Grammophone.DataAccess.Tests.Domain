@@ -6,25 +6,25 @@ namespace Grammophone.DataAccess.Tests.Domain
 	public class Track
 	{
 		/// <summary>The primary key.</summary>
-		public int ID { get; set; }
+		public virtual int ID { get; set; }
 
 		/// <summary>The track name.</summary>
-		public string Name { get; set; }
+		public virtual string Name { get; set; }
 
 		/// <summary>The track number in the album.</summary>
-		public int Number { get; set; }
+		public virtual int Number { get; set; }
 
 		/// <summary>The duration in seconds.</summary>
-		public int DurationSeconds { get; set; }
+		public virtual int DurationSeconds { get; set; }
 
 		/// <summary>The album foreign key.</summary>
-		public int AlbumID { get; set; }
+		public virtual int AlbumID { get; set; }
 
 		/// <summary>The album reference.</summary>
 		public virtual Album Album { get; set; }
 
 		/// <summary>The genre foreign key.</summary>
-		public int GenreID { get; set; }
+		public virtual int GenreID { get; set; }
 
 		/// <summary>The genre reference.</summary>
 		public virtual Genre Genre { get; set; }

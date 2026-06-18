@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 namespace Grammophone.DataAccess.Tests.Domain
 {
@@ -9,27 +10,27 @@ namespace Grammophone.DataAccess.Tests.Domain
 	public class Album
 	{
 		/// <summary>The primary key.</summary>
-		public int ID { get; set; }
+		public virtual int ID { get; set; }
 
 		/// <summary>The album name.</summary>
-		public string Name { get; set; }
+		public virtual string Name { get; set; }
 
 		/// <summary>The release date.</summary>
-		public DateTime? ReleaseDate { get; set; }
+		public virtual DateTime? ReleaseDate { get; set; }
 
 		/// <summary>The artist foreign key.</summary>
-		public int ArtistID { get; set; }
+		public virtual int ArtistID { get; set; }
 
 		/// <summary>The artist reference.</summary>
 		public virtual Artist Artist { get; set; }
 
 		/// <summary>The genre foreign key.</summary>
-		public int GenreID { get; set; }
+		public virtual int GenreID { get; set; }
 
 		/// <summary>The genre reference.</summary>
 		public virtual Genre Genre { get; set; }
 
 		/// <summary>The album tracks.</summary>
-		public virtual ICollection<Track> Tracks { get; set; } = new HashSet<Track>();
+		public virtual ICollection<Track> Tracks { get; set; } = new ObservableCollection<Track>();
 	}
 }
