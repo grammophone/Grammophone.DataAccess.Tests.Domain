@@ -7,19 +7,19 @@ namespace Grammophone.DataAccess.Tests.Domain
 	/// </summary>
 	public static class TestData
 	{
-		/// <summary>Parent with children.</summary>
-		public const string ParentWithChildrenName = "Parent with children";
+		/// <summary>Artist name.</summary>
+		public const string ArtistName = "The Example Band";
 
-		/// <summary>Dependent name.</summary>
-		public const string DependentName = "Nested dependent";
+		/// <summary>Album name.</summary>
+		public const string AlbumName = "Blue Integration";
 
-		/// <summary>Event name.</summary>
-		public const string EventName = "Long event";
+		/// <summary>Genre name.</summary>
+		public const string GenreName = "Progressive Tests";
 
-		/// <summary>Event start time.</summary>
-		public static readonly DateTime EventStartTime = new DateTime(2024, 1, 1);
+		/// <summary>Track name.</summary>
+		public const string TrackName = "Opening Assertion";
 
-		/// <summary>Event end time.</summary>
-		public static readonly DateTime EventEndTime = new DateTime(2024, 1, 4);
+		/// <summary>Album release date.</summary>
+		public static readonly DateTime AlbumReleaseDate = new DateTime(2024, 1, 1);
 	}
 }
