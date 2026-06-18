@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{3DD877A5-93F3-48DF-8D14-31261E4A0816}</ProjectGuid>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyTitle>Grammophone.DataAccess.Tests.Domain</AssemblyTitle>
+    <Product>Grammophone.DataAccess.Tests.Domain</Product>
+    <Copyright>Copyright ©  2016</Copyright>
+    <DocumentationFile>bin\$(Configuration)\Grammophone.DataAccess.Tests.Domain.XML</DocumentationFile>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Grammophone.DataAccess\Grammophone.DataAccess.csproj" />
+  </ItemGroup>
+</Project>
