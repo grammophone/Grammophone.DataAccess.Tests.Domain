@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using Grammophone.DataAccess.Collections;
 
 namespace Grammophone.DataAccess.Tests.Domain
 {
@@ -15,9 +16,9 @@ namespace Grammophone.DataAccess.Tests.Domain
 		public virtual string Name { get; set; }
 
 		/// <summary>The albums in this genre.</summary>
-		public virtual ICollection<Album> Albums { get; set; } = new ObservableCollection<Album>();
+		public virtual ICollection<Album> Albums { get; set; } = new ObservableHashSet<Album>();
 
 		/// <summary>The tracks in this genre.</summary>
-		public virtual ICollection<Track> Tracks { get; set; } = new ObservableCollection<Track>();
+		public virtual ICollection<Track> Tracks { get; set; } = new ObservableHashSet<Track>();
 	}
 }
