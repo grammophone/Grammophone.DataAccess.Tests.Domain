@@ -1,6 +1,5 @@
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using Grammophone.DataAccess.Collections;
+using Grammophone.GenericContentModel;
 
 namespace Grammophone.DataAccess.Tests.Domain
 {
